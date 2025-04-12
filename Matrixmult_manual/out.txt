@@ -1,0 +1,40 @@
+Wnioski:
+1.Wzrost efektywności dostępu pamięci w przypadku algorytmu wykożystującego macierz transponowaną 
+jest znacznie berdziej widoczny w przypadku durzych N i równoznacznie dla wersji 
+sekwencyjnej algorytmu.
+2.Czas nie maleje zgodnie ze wzorem t=t0/Thread_num co sugeruje niepełne wykożystywanie wątków przez OS.
+
+N = 240, Threads: 2, Sequential: 0.0839352 s, Sequential (transposed): 0.0552058 s, Threaded: 0.0584955 s, Threaded (transposed): 0.0591185 s
+N = 240, Threads: 4, Sequential: 0.0839352 s, Sequential (transposed): 0.0552058 s, Threaded: 0.0392685 s, Threaded (transposed): 0.0352696 s
+N = 240, Threads: 6, Sequential: 0.0839352 s, Sequential (transposed): 0.0552058 s, Threaded: 0.0244011 s, Threaded (transposed): 0.02399 s
+N = 240, Threads: 8, Sequential: 0.0839352 s, Sequential (transposed): 0.0552058 s, Threaded: 0.0175305 s, Threaded (transposed): 0.0169561 s
+N = 240, Threads: 10, Sequential: 0.0839352 s, Sequential (transposed): 0.0552058 s, Threaded: 0.0132677 s, Threaded (transposed): 0.0131714 s
+N = 240, Threads: 12, Sequential: 0.0839352 s, Sequential (transposed): 0.0552058 s, Threaded: 0.0165405 s, Threaded (transposed): 0.0153418 s
+
+N = 480, Threads: 2, Sequential: 0.441716 s, Sequential (transposed): 0.436438 s, Threaded: 0.283589 s, Threaded (transposed): 0.226237 s
+N = 480, Threads: 4, Sequential: 0.441716 s, Sequential (transposed): 0.436438 s, Threaded: 0.116942 s, Threaded (transposed): 0.13574 s
+N = 480, Threads: 6, Sequential: 0.441716 s, Sequential (transposed): 0.436438 s, Threaded: 0.104851 s, Threaded (transposed): 0.102001 s
+N = 480, Threads: 8, Sequential: 0.441716 s, Sequential (transposed): 0.436438 s, Threaded: 0.0835586 s, Threaded (transposed): 0.0654859 s
+N = 480, Threads: 10, Sequential: 0.441716 s, Sequential (transposed): 0.436438 s, Threaded: 0.0880073 s, Threaded (transposed): 0.0810347 s
+N = 480, Threads: 12, Sequential: 0.441716 s, Sequential (transposed): 0.436438 s, Threaded: 0.0826449 s, Threaded (transposed): 0.0711262 s
+
+N = 720, Threads: 2, Sequential: 1.54834 s, Sequential (transposed): 1.47023 s, Threaded: 0.782638 s, Threaded (transposed): 0.736116 s
+N = 720, Threads: 4, Sequential: 1.54834 s, Sequential (transposed): 1.47023 s, Threaded: 0.399583 s, Threaded (transposed): 0.391275 s
+N = 720, Threads: 6, Sequential: 1.54834 s, Sequential (transposed): 1.47023 s, Threaded: 0.306076 s, Threaded (transposed): 0.313594 s
+N = 720, Threads: 8, Sequential: 1.54834 s, Sequential (transposed): 1.47023 s, Threaded: 0.249124 s, Threaded (transposed): 0.22222 s
+N = 720, Threads: 10, Sequential: 1.54834 s, Sequential (transposed): 1.47023 s, Threaded: 0.289738 s, Threaded (transposed): 0.278466 s
+N = 720, Threads: 12, Sequential: 1.54834 s, Sequential (transposed): 1.47023 s, Threaded: 0.25763 s, Threaded (transposed): 0.247261 s
+
+N = 960, Threads: 2, Sequential: 4.23632 s, Sequential (transposed): 3.48281 s, Threaded: 1.99682 s, Threaded (transposed): 1.76129 s
+N = 960, Threads: 4, Sequential: 4.23632 s, Sequential (transposed): 3.48281 s, Threaded: 1.25355 s, Threaded (transposed): 1.04286 s
+N = 960, Threads: 6, Sequential: 4.23632 s, Sequential (transposed): 3.48281 s, Threadsed: 0.896463 s, Threaded (transposed): 0.809134 s
+N = 960, Threads: 8, Sequential: 4.23632 s, Sequential (transposed): 3.48281 s, Threaded: 0.71956 s, Threaded (transposed): 0.686333 s
+N = 960, Threads: 10, Sequential: 4.23632 s, Sequential (transposed): 3.48281 s, Threaded: 0.813569 s, Threaded (transposed): 0.768096 s
+N = 960, Threads: 12, Sequential: 4.23632 s, Sequential (transposed): 3.48281 s, Threaded: 0.750294 s, Threaded (transposed): 0.725527 s
+
+N = 1200, Threads: 2, Sequential: 10.2986 s, Sequential (transposed): 6.80132 s, Threaded: 4.75677 s, Threaded (transposed): 3.46994 s
+N = 1200, Threads: 4, Sequential: 10.2986 s, Sequential (transposed): 6.80132 s, Threaded: 2.49485 s, Threaded (transposed): 2.04935 s
+N = 1200, Threads: 6, Sequential: 10.2986 s, Sequential (transposed): 6.80132 s, Threaded: 1.82178 s, Threaded (transposed): 1.5625 s
+N = 1200, Threads: 8, Sequential: 10.2986 s, Sequential (transposed): 6.80132 s, Threaded: 1.54521 s, Threaded (transposed): 1.2743 s
+N = 1200, Threads: 10, Sequential: 10.2986 s, Sequential (transposed): 6.80132 s, Threaded: 1.60913 s, Threaded (transposed): 1.32392 s
+N = 1200, Threads: 12, Sequential: 10.2986 s, Sequential (transposed): 6.80132 s, Threaded: 1.55862 s, Threaded (transposed): 1.31246 s
